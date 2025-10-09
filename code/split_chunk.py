@@ -145,6 +145,8 @@ def process_large_data(other_system_prompt, other_user_template, file_name, data
             user_content = user_template.render(name_json=file_name,
                                                 content_json=some_data)
 
+            print('*'*60)
+            print(user_content)
             # 安全调用LLM
             some_chunk_result = safe_call_llm(other_system_prompt, user_content)
             print(some_chunk_result)
@@ -205,7 +207,7 @@ def main():
         other_number = 0
         error_files = []
 
-        with open('../result_csv/output_test_32B_v6.csv', 'w', newline='', encoding='utf-8') as csvfile:
+        with open('../result_csv/output_test_32B_v7.csv', 'w', newline='', encoding='utf-8') as csvfile:
             fieldnames = ['name', 'chunk_index', 'text', 'score', 'result']
             writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
             writer.writeheader()
@@ -266,7 +268,12 @@ def main():
                     print("正在评估模型分块结果")
                     evaluate_message = evaluate_template.replace("{{data}}", text)
                     result = call_llm(evaluate_system_prompt, evaluate_message, "Qwen3-235B-A22B-Instruct-2507")
-                    json_result = json.loads(result)
+                    import re
+                    json_pattern = r'\{[^{}]*\{[^{}]*\}[^{}]*\}|\{.*\}'
+                    match = re.search(json_pattern, result, re.DOTALL)
+
+                    print("评估结果:", result)
+                    json_result = json.loads(match)
                     score = json_result['overall_assessment']['average_score']
                     score_result = json_result['overall_assessment']['summary']
                     # 写入CSV

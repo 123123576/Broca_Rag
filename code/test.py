@@ -1621,23 +1621,28 @@ data = [
 
 ]
 
-json_file = "D:/zhuiyi/rag_chunk/20250908_LLM分段/20250908_LLM分段/data/测试数据/2023年中移在线员工补充医疗保险服务手册.pdf.json_processed.json"
+json_file = "D:/zhuiyi/rag_chunk/20250908_LLM分段/20250908_LLM分段/data/测试数据/售付汇合同登记-3007.docx.json_processed.json"
 with open(json_file, 'r', encoding='utf-8') as f:
     json_data = json.load(f)
+    f.seek(0)  # 重置文件指针
+    lines = f.readlines()
+text = ''
+for i in range(len(lines)):
+    text += lines[i]
 
-print(data)
 print(json_data[:402])
 user_template = Template(other_user_prompt)
 
-user_content = user_template.render(name_json="2023年中移在线员工补充医疗保险服务手册.pdf.json_processed.json",
-                                    content_json=json_data[:402])
+user_content = user_template.render(name_json="售付汇合同登记-3007.docx.json_processed.json",
+                                    content_json=json_data)
+print(user_content)
 result = call_llm(other_system_prompt, user_content, 'Qwen3-32B')
 print(result)
 
 user_template1 = Template(other_user_prompt)
 
-user_content1 = user_template1.render(name_json="2023年中移在线员工补充医疗保险服务手册.pdf.json_processed.json",
-                                      content_json=data)
+user_content1 = user_template1.render(name_json="售付汇合同登记-3007.docx.json_processed.json",
+                                      content_json=text)
 print(user_content1)
 if data == json_data[:403]:
     print(1)

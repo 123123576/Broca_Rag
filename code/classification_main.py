@@ -96,7 +96,7 @@ def call_llm(system_prompt: str, user_message: str, model: str) -> str:
                 {"role": "system", "content": system_prompt},
                 {"role": "user", "content": user_message}
             ],
-            temperature=0.1,
+            temperature=0.7,
             max_tokens=2470,
             top_p=0.8,
             presence_penalty=0,

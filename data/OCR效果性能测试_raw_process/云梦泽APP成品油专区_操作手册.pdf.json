@@ -1,0 +1,1914 @@
+[
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "Normal",
+        "text": "成品油直批APP"
+    },
+    {
+        "style": "Normal",
+        "text": "全业务流程培训"
+    },
+    {
+        "style": "Normal",
+        "text": "中国石油"
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "table",
+        "text": "|  | 目   录 |"
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "table",
+        "text": "| 使用环境与地址 |  |\n| 1.     使用环境与地址 \n2.    APP下载地址 | 1.     客户信息查询（客户、联系人、客户经理列表）2.     订单信息查询 |\n| 第一部分：客户注册及认证 | 3.     物流信息查询 \n4.     其他信息查询（商品、定价、整体报表等） |\n| 1.     APP的注册登录 |  |\n| 2.     APP页面功能的基本介绍 |  |\n| 3.     企业认证-客户端APP在线认证 \n4.     企业认证-中台现场认证、续期及变更 5.     中台销售线索查询与处理 \n6.     APP其他功能 | 1.     客存对账-设置结账日期 \n2.     客存对账-客存导出 \n3.     客存对账-对账单列表 \n4.     客存对账-对账单进度 |\n|  | 5.     客存对账-数据统计 |\n| 1.     APP下单购油(正常下单、营销下单) 2.     中台订单信息完善 \n3.     中台财务收款确认 \n4.     串换客户下单 | 6.     客存对账-客存签认 \n7.  APP预约提油流程（未超期） 8.  APP预约提油流程（超期客存）\n9.  中台-待缴费列表 \n10. 提油环节控制（物流） |\n| 第三部分：预约提油 | 11. “即销即提”模式 |\n| 1.     APP预约自提 \n2.     物流系统自提计划审核及二维码提油验证 3.     自提提油单签收及评价 | 12. 预约提油“强控制”模式 \n13. 客存到期提醒功能 \n14. 配送还量功能 |\n| 4.     APP预约配送 |  |\n| 5.     物流系统配送计划审核及拆分执行 6.     配送提油单签收及评价 | 1.     挂牌商品显示控制 \n2.     挂牌销量限制 |"
+    },
+    {
+        "style": "Normal",
+        "text": "3.     议价销量限制 \n\t4.     客户最大购油量限制 \n\t5.     预约提油限制 \n2"
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "table",
+        "text": "|  | 目   录 |"
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "table",
+        "text": "|  |\n| 1.     中台添加集团客户 \n2.     APP添加副联系人 \n3.     APP主联系人拆分付油通知单 4.     APP主联系人拆单查询与还量 | 1.     营销活动类型 \n2.     维护活动模板 \n3.     维护营销活动 \n4.     活动列表 |\n| 5.     APP副联系人提油与还量 6.     中台查询拆单数据 | 第十二部分：运维功能 |\n|   | 1.     发起运维申请 \n2.     运维审批 |\n| 1.  水路业务进行议价下单 2.  水路预约自提和配送 |  |\n| 3.  维护船运提货人 \n4.  查询水路提油信息时展示船舶信息 5.  运维功能补录水路的出库单 | 1.  时间控制-订单支付期限控制 2.     时间控制-购油时间 \n3.     时间控制-其他配置 |\n|  | 4.     时间控制-客存不足提醒 \n5.     挂牌价控制 |\n| 1.  内容管理 | 6.     油易贷控制 |\n| 2.  栏目管理 |  |"
+    },
+    {
+        "style": "table",
+        "text": "|  |\n|  |\n| 1.  挂牌价管理 \n2.  折扣价管理 \n3.  议价管理 \n4.  合同价管理 \n5.  运费管理 | 1.     员工账号创建 \n2.     员工账号权限分配 \n3.     员工账号权限修改及删除 \n4.     营业网点管理 \n5.     油库管理 \n6.     设置审批流程 |"
+    },
+    {
+        "style": "Normal",
+        "text": "7.     添加油库"
+    },
+    {
+        "style": "Normal",
+        "text": "3"
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "table",
+        "text": "|  | 直批APP整体设计理念 |"
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "Normal",
+        "text": "以客户为中心进行直批业务全流程设计，同时与现有各大统建系统全面集成，保证数据统一 性、实现业务流程闭环。"
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "Normal",
+        "text": "6"
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "table",
+        "text": "|  |"
+    },
+    {
+        "style": "Normal",
+        "text": "7"
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "table",
+        "text": "|  | 成品油专区-选择销售公司（店铺） |"
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "Normal",
+        "text": "在云梦泽APP成品油专区首页左上角，选择需要购油的销售公司，即进入该公司的成 品油店铺页面。"
+    },
+    {
+        "style": "table",
+        "text": "|  |   |"
+    },
+    {
+        "style": "Normal",
+        "text": "12"
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "table",
+        "text": "|  | 云梦泽APP成品油专区-消息中心 |"
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "Normal",
+        "text": "在成品油专区点击首页右上角消息按钮   可进入消息中心查看相关通知信息。"
+    },
+    {
+        "style": "table",
+        "text": "|  |   |"
+    },
+    {
+        "style": "Normal",
+        "text": "13"
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "table",
+        "text": "|  | 成品油专区首页信息浏览和功能菜单 |"
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "table",
+        "text": "| 成品油专区首页信息模块 \n首页信息内容包括热门活动模块、油品促销、油品推荐模块等，可点击活动图片或油品促 销按钮进入详情页面查看活动具体内容并直 接参与营销活动下单。点击【油品推荐】的 油品，也可直接进入下单页面。 成品油专区首页功能菜单 •   在首页中间，点击【我要购油】菜单，可进 入在售油品菜单页面，选择要购油品进行下单 购油。 •   点击【预约提油】可进入预约提油页面，针 对已有购油订单，进行预约提油申请操作。 •  点击【物流查询】可进入物流查询页面，针对 \t已预约的提油申请，查询提油物流进度。 •  点击【油品促销】可查看当前所有正在开展的 \t促销活动信息。 |"
+    },
+    {
+        "style": "Normal",
+        "text": "14"
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "table",
+        "text": "|  | 企业认证-在线认证 |"
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "Normal",
+        "text": "客户联系人登录后，可以浏览首页内容， 但无法购油，需完成企业认证后，方可下单购油。"
+    },
+    {
+        "style": "table",
+        "text": "| 申请企业认证步骤 \n已注册登录，但尚未企业认证的 用户可在个人中心页右上角点击 【去认证企业】，或进入首页后 点击“我要购油”将触发“去认 证”的引导提示。 |"
+    },
+    {
+        "style": "Normal",
+        "text": "15"
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "table",
+        "text": "|  | 企业认证-在线认证申请 |"
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "Normal",
+        "text": "填写企业信息，提交在线认证申请。"
+    },
+    {
+        "style": "table",
+        "text": "| 提交在线认证申请 客户联系人需填写交联系人 姓名、身份证号、企业全称、统 一社会信用代码、企业法人及认 证销售公司，并提交。 |"
+    },
+    {
+        "style": "Normal",
+        "text": "16"
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "table",
+        "text": "|  | 企业认证-在线认证申请 |"
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "Normal",
+        "text": "提交认证申请后， 实时获得认证结果。"
+    },
+    {
+        "style": "table",
+        "text": "| CRM信息认证匹配 在线认证申请提交后可能出现三 种结果： 1、匹配通过：客户填写的认证信 息与CRM完全匹配，将提示客户携带 相关资料前往营业室现场认证。 2、匹配不通过：客户填写的认证 信息与CRM不匹配，此时需客户经理 协助客户确认并更正信息后再次认证。 3、新客户：CRM中没有客户信息， 客户是第一次登录系统，此时需指派 一名客户经理与客户联系，收集客户 信息并完善CRM系统，申请MDM编码。 |"
+    },
+    {
+        "style": "Normal",
+        "text": "17"
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "table",
+        "text": "|  | 企业认证-现场认证 |"
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "Normal",
+        "text": "在线提交申请并且数据匹配成功后，联系人需携带相关资料到任意营业网点进行现场认证，"
+    },
+    {
+        "style": "Normal",
+        "text": "认证通过后客户即可在云梦泽APP成品油专区开始购油。同时客户在APP收到认证成功的信息。"
+    },
+    {
+        "style": "Normal",
+        "text": "客户经理也会同步 收到短信。"
+    },
+    {
+        "style": "Normal",
+        "text": "营业执照"
+    },
+    {
+        "style": "Normal",
+        "text": "资料准备             营业网点高拍仪拍照提交                中台认证"
+    },
+    {
+        "style": "Normal",
+        "text": "19"
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "table",
+        "text": "|  | 中台-客户认证管理 |"
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "Normal",
+        "text": "【用户管理>客户认证管理】可查看所有客户的认证申请信息，是客户通过云梦泽 APP成品油专区在 线认证通过后办理现场认证，以及客户联系人在认证有效期内进行 有效期续期、变更 联系人等管理维护的操作界面。"
+    },
+    {
+        "style": "Normal",
+        "text": "客户APP在线申请认证通过现场认证信息"
+    },
+    {
+        "style": "table",
+        "text": "|  |"
+    },
+    {
+        "style": "Normal",
+        "text": "20"
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "table",
+        "text": "|  | 一个联系人可进行多个企业认证 |"
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "Normal",
+        "text": "一个联系人如有代理多家客户购油或在不同的销售公司购油时，可申请多个企业认证身份。"
+    },
+    {
+        "style": "Normal",
+        "text": "示例："
+    },
+    {
+        "style": "table",
+        "text": "| 某联系人小王， | 客户A | 销售公司1 |"
+    },
+    {
+        "style": "Normal",
+        "text": "代理客户A在销售公司1购油，"
+    },
+    {
+        "style": "table",
+        "text": "| 代理客户B在销售公司1购油、 | （即 | 联系人 | 客户B | 销售公司1 |\n| 代理客户B在销售公司2购油， | （即 | 联系人 | 客户B | 销售公司1 |\n| 代理客户C在销售公司3购油， | （即 | 一个APP账号） | 客户B | 销售公司2 |"
+    },
+    {
+        "style": "Normal",
+        "text": "则该联系人须使用其APP账号，分别进行"
+    },
+    {
+        "style": "table",
+        "text": "| 四次企业认证，获得四个认证身份。 | 客户C | 销售公司3 |"
+    },
+    {
+        "style": "Normal",
+        "text": "32"
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "table",
+        "text": "|  | 企业认证- 购油身份切换 |"
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "Normal",
+        "text": "一个联系人有多个企业认证身份时，在每次查询信息或下单操作前，需进行身份切 换，可通过搜索客户名称或销售分公司名称快速切换到相应身份。"
+    },
+    {
+        "style": "table",
+        "text": "| 身份切换说明 •  处于不同的身份状态时，在云梦泽APP成 品油专区将查询    到不同的油品内容、订单、提油单信息    。并可以不同的客 户身份在不同的中石    油销售公司进行 购油操作。 •  在APP个人信息右上角点击切换按钮， 后选中身份信息、可进行身份切换。 |"
+    },
+    {
+        "style": "Normal",
+        "text": "33"
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "table",
+        "text": "|  | APP个人中心-我的公司 |"
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "Normal",
+        "text": "从【云梦泽APP>成品油专区>我的>我的公司】可查看用户当前身份所认证的公司基本信息。"
+    },
+    {
+        "style": "table",
+        "text": "| 我的公司 •  可查询当前身份所认证的公司 \t相关信息。 •  也可点击【申请新增销售公司 】认证新的中石油销售公司， 客户公司信息不可修改，只需 选择新的销售公司即可。 |"
+    },
+    {
+        "style": "Normal",
+        "text": "35"
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "table",
+        "text": "|  | 成品油专区个人中心-我的车辆 |"
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "Normal",
+        "text": "在【成品油专区>我的>我的车辆】中可将常用的车辆信息预先输入配置，在线预约提油时可以 通过搜索车牌号快速选择相关车辆，无需每次手工输入车辆信息，也可左滑删除不用的车辆信息。"
+    },
+    {
+        "style": "table",
+        "text": "| 我的车辆操作说明 •点击【添加车辆】，可填写并保存新的 车辆信息。 •点击指定的车辆信息，打开车辆信息编 辑界面，修改后点击【完成】进行保存。 •点击车辆信息左侧的勾选按钮，可设置 该车辆为默认车辆，在线预约提油时会自 动选中该默认选中车辆信息，使操作流程 更快捷。 |"
+    },
+    {
+        "style": "Normal",
+        "text": "36"
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "table",
+        "text": "|  | 成品油专区个人中心-我的司机 |"
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "Normal",
+        "text": "在【成品油专区>我的>我的司机】中可将常用的司机信息预先输入配置，在线预约提油 时可以通过搜索司机姓名快速选择相关司机，无需每次手工输入司机信息，也可左滑删除 不用的司机信息。"
+    },
+    {
+        "style": "table",
+        "text": "| 我的司机操作说明 •点击【添加司机】，可填写并保存新的 司机信息 •点击指定的司机信息，打开司机信息编 辑界面，修改后点击【完成】进行保存。 •点击司机信息左侧的勾选按钮，可设置 该司机为默认车辆，在线预约提油时会自 动选中该默认选中司机信息，使操作流程 更快捷。 |"
+    },
+    {
+        "style": "Normal",
+        "text": "37"
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "table",
+        "text": "|  | 投诉建议 |"
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "Normal",
+        "text": "对于中国石油成品油直批业务中有任何的意见建议或投诉，都可以在线进"
+    },
+    {
+        "style": "Normal",
+        "text": "行反馈， 后续将有专人处理跟进。"
+    },
+    {
+        "style": "table",
+        "text": "| 投诉建议反馈步骤 \n第一步：进入成品油专区主菜单【我 的】。 第二步：点击【在线服务】。 第三步:选择问题类型，可多选。 第四步：输入具体问题描述。 第五步：点击【提交】即反馈成功。 |"
+    },
+    {
+        "style": "Normal",
+        "text": "38"
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "table",
+        "text": "|  | 投诉建议调查 |"
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "Normal",
+        "text": "【服务管理>投诉建议调查】可查询客户在成品油专区中提交的投诉或建议，相关业务人员 应及时 关注并跟进处理客户问题。"
+    },
+    {
+        "style": "Normal",
+        "text": "APP意见反馈                                            中台投诉建议查询"
+    },
+    {
+        "style": "Normal",
+        "text": "39"
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "table",
+        "text": "|  |"
+    },
+    {
+        "style": "Normal",
+        "text": "41"
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "table",
+        "text": "|  | 购油下单-下单途径 |"
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "Normal",
+        "text": "客户在云梦泽APP成品油专区点击【我要购油】 、 【油品推荐】或【营销活动】三个途径 可进入购油下单。"
+    },
+    {
+        "style": "table",
+        "text": "|  |"
+    },
+    {
+        "style": "Normal",
+        "text": "42"
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "table",
+        "text": "|  | 购油下单-下单步骤 |"
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "table",
+        "text": "| 用户选择油品，输入下单信息，提交购油下单。 | 43 |   |"
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "table",
+        "text": "|  | 购油下单-价格说明 |"
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "Normal",
+        "text": "客户下单价格由当前油品挂牌价、客户会员等级折扣、当前开展的营销活动及其他客户特殊价"
+    },
+    {
+        "style": "Normal",
+        "text": "格等因素决定。"
+    },
+    {
+        "style": "table",
+        "text": "|              |   |"
+    },
+    {
+        "style": "Normal",
+        "text": "44"
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "table",
+        "text": "|  | 购油下单-订单提交 |"
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "Normal",
+        "text": "购油下单提交后， 将校验ERP账户余额，如账户余额满足，将生成有效订单。"
+    },
+    {
+        "style": "table",
+        "text": "| 订单提交成功 |  | 系统短信通知客户经理 |   |\n| 订单提交成功 |  | 进行订单信息完善 |   |"
+    },
+    {
+        "style": "Normal",
+        "text": "45"
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "table",
+        "text": "|  | 中台待处理订单-信息完善 |"
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "Normal",
+        "text": "【订单管理> 待处理订单】客户在云梦泽APP成品油专区下单成功后， 需业务人员进行 订单完善后推送至 ERP系统。"
+    },
+    {
+        "style": "table",
+        "text": "| 客户APP提交下单成功 | 【中台>待处理订单】 | 客户收到订单可开始预 |\n| 客户APP提交下单成功 | 【中台>待处理订单】 | 约申请短信通知 |\n| 客户APP提交下单成功 | 完善订单信息 | 约申请短信通知 |"
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "Normal",
+        "text": "46"
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "table",
+        "text": "|  | 购油下单-余额不足 |"
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "Normal",
+        "text": "购油下单提交后， 校验ERP账户余额不足时，将生成待支付订单,也可在中台-控制管理开启自"
+    },
+    {
+        "style": "table",
+        "text": "| 动支付开关,客户提交订单时选择“账户余额自动支付 ”，当校验到账户余额充足时，订单自动变 成待审核状态，无需客户手动点击“去支付 ”。 |"
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "table",
+        "text": "| 余额不足 \n提交订单后，系统余额校验发现余额 不足时订单将流转为待支付订单。 |"
+    },
+    {
+        "style": "Normal",
+        "text": "47"
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "table",
+        "text": "|  | 待支付订单上传转账凭证 |"
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "Normal",
+        "text": "客户在订单有效期内完成银行转账或付款后，可在转账凭证拍照上传至APP，系统将通知财"
+    },
+    {
+        "style": "Normal",
+        "text": "务在中台确认收款信息， 以加快资金入账时效。"
+    },
+    {
+        "style": "Normal",
+        "text": "准备转账凭证                         APP拍照上传凭证                                   财务人员做账"
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "Normal",
+        "text": "48"
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "table",
+        "text": "|  | 待支付订单重新支付 |"
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "Normal",
+        "text": "财务人员做完入账凭证，ERP更新客户余额后，客户联系人可在云梦泽APP成品油专区待支付订单点 击“去支付”即可完成订单提交。"
+    },
+    {
+        "style": "Normal",
+        "text": "客户在成品油专区待支付订单点击“去支付”"
+    },
+    {
+        "style": "table",
+        "text": "|  |"
+    },
+    {
+        "style": "Normal",
+        "text": "49"
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "table",
+        "text": "|  | 订单取消 |"
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "Normal",
+        "text": "客户可在云梦泽APP成品油专区针对“待支付”状态的订单进行一键自助取消。"
+    },
+    {
+        "style": "table",
+        "text": "| 订单取消 订单提交成功前，客户可在云梦泽APP 成品油专区自助将订单取消，取消后，订单将直接变为作废状态，客户可重新 下单。 |"
+    },
+    {
+        "style": "Normal",
+        "text": "50"
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "table",
+        "text": "|  |"
+    },
+    {
+        "style": "Normal",
+        "text": "53"
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "table",
+        "text": "|  | 预约提油-未预约量 |"
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "Normal",
+        "text": "客户在预约提油页面，可查看每个油品每个油库的剩余可预约量,也可按照提油油库、 付油通知单、油品名称查找需要提油的单据。"
+    },
+    {
+        "style": "table",
+        "text": "|   |"
+    },
+    {
+        "style": "Normal",
+        "text": "54"
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "table",
+        "text": "|  |"
+    },
+    {
+        "style": "Normal",
+        "text": "55"
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "table",
+        "text": "|  | 预约提油-自提预约申请 |"
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "Normal",
+        "text": "生成有效订单并收到erp传过来的付油通知单后，客户可在云梦泽APP成品油专区申请预约提油，客户预 约提油量"
+    },
+    {
+        "style": "Normal",
+        "text": "不可超过其订单剩余可预约量。"
+    },
+    {
+        "style": "table",
+        "text": "| 预约自提操作步骤如下： 第一步：点击【首页>预约提油】，页面 会列出客户当前所有的订单信息。 第二步: 点击需要提油的订单。 第三步：输入本次提油量、自提车辆、自 提司机、预约提油日期、预约时间段。 第四步：点击【提交】按钮，预约提油申 请成功提交。 |"
+    },
+    {
+        "style": "Normal",
+        "text": "56"
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "table",
+        "text": "|  | 自提：二维码提油 |"
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "Normal",
+        "text": "•    自预约提油申请审核通过后， 即可通过云梦泽APP成品油专区生成提油二维码。如超过预"
+    },
+    {
+        "style": "Normal",
+        "text": "约提油日期，提油 二维码将失效。"
+    },
+    {
+        "style": "Normal",
+        "text": "•    点击【重新生成二维码】 ，旧二维码立即失效，仅可使用新的二维码进行提油验证。"
+    },
+    {
+        "style": "table",
+        "text": "| 二维码提油流程说明 \n第一步：在提油单审核通过后，点击【首 页>物流查询】\n第二步: 点击需要提油的提油申请单。第三步：点击右上角【提油二维码】按钮 第四步：在油库提油时向工作人员出示二 维码及司机身份证进行验证 \n第五步：二维码验证通过且完成油库提油 其他资质验证要求即可进行提油。 |"
+    },
+    {
+        "style": "Normal",
+        "text": "58"
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "table",
+        "text": "|  | 二维码提油 |"
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "Normal",
+        "text": "客户前往油库提油时，司机需出示云梦泽APP成品油专区提油通知上的二维码及预约提油时 指定的司机本人身 份证在油库进行验证，验证通过后方可提油。"
+    },
+    {
+        "style": "table",
+        "text": "|   |  |   |\n| 身份证至油库提油 |  |   |"
+    },
+    {
+        "style": "Normal",
+        "text": "59"
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "table",
+        "text": "|  | 自提提油单签收及评价 |"
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "Normal",
+        "text": "客户在收到油品后，可在云梦泽APP成品油专区提油单上进行签收和评价。"
+    },
+    {
+        "style": "table",
+        "text": "| 签收评价流程说明 第一步：点击【首页>物流查询】 第二步: 找到已出库状态的自提提 油单，点击进去。 第三步：点击确认签收按钮。 第四步：提示签收成功，并弹出评 价页面。 第五步：针对成品油专区预约提油体 验和油库提油体验进行评分，点击提 交。 第六步：提油单状态变成已完成。 |"
+    },
+    {
+        "style": "Normal",
+        "text": "68"
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "table",
+        "text": "|  | 自助预约提油-配送预约申请 |"
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "Normal",
+        "text": "生成有效订单并收到erp传过来的付油通知单后， 客户可在云梦泽APP成品油专区申请预约配送，预约提油量不可超过订单剩余可预约量。"
+    },
+    {
+        "style": "table",
+        "text": "| 预约配送操作步骤如下： 第一步：点击【首页>预约提油】，页面 会列出客户当前所有的订单信息。 第二步: 点击需要提油的订单。 第三步：输入本次需配送的提油吨数及配 送地址 第四步：点击【提交】按钮，预约配送申 请成功提交。 |"
+    },
+    {
+        "style": "Normal",
+        "text": "72"
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "table",
+        "text": "|  | 配送提油单签收及评价 |"
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "Normal",
+        "text": "客户在收到油品后，可在超过订单剩余可预约量。提油单上进行签收和评价。"
+    },
+    {
+        "style": "table",
+        "text": "| 签收评价流程说明 \n第一步：点击【首页>物流查询】第二步: 找到已出库状态的配送提 油单，点击进去。 第三步：点击确认签收按钮。 第四步：提示签收成功，并弹出评 价页面。 第五步：针对超过订单剩余可预约量。 预约提油体验和配送服务进行评分，点击提交。 第六步：提油单状态变成已完成。 |"
+    },
+    {
+        "style": "Normal",
+        "text": "76"
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "table",
+        "text": "|  | 章节要点巩固 |"
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "Normal",
+        "text": "1预约自提时，填写的自提司机信息及自提车辆信息需与实际证照信息完全一致，否 \t则在油库无法通过二维码提油验证。"
+    },
+    {
+        "style": "Normal",
+        "text": "2预约提油申请提交，在物流系统审核通过后，将变为“已审核”状态，仅该状态下， \t可生成“提油二维码”，前往油库验证提油。"
+    },
+    {
+        "style": "Normal",
+        "text": "3客户仅可在预约提油日期前往油库验证提油，若超过预约时间未提，物流系统验证 \t二维码时会提示“二维码已过期”。"
+    },
+    {
+        "style": "Normal",
+        "text": "4客户在APP二维码页面，点击“重新生成二维码”，原来的二维码则立即失效，仅最 \t新的二维码是有效可验证的。"
+    },
+    {
+        "style": "Normal",
+        "text": "77"
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "table",
+        "text": "|  | 章节要点巩固 |"
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "table",
+        "text": "|  | 在物流系统进行二维码验证操作时，如遇司机身份验证通过，但二维码验证不通过 的，可能有以下两个原因。 |"
+    },
+    {
+        "style": "Normal",
+        "text": "1.该笔提油单据的二维码已经被重新生成，司机提供的二维码不是最新有效的。可 让其在云梦泽APP成品油专区点击“重新生成二维码” ，使用最新的二维码再次验 证。"
+    },
+    {
+        "style": "Normal",
+        "text": "2.建议客户检查APP中是否有多笔预约申请单，多个提油二维码。二维码信息需与对 应预约自提的司机信息一致才可通过验证。"
+    },
+    {
+        "style": "table",
+        "text": "| 7 | 客户因故需取消预约申请重新预约有三种场景和三种处理方式： |"
+    },
+    {
+        "style": "Normal",
+        "text": "第一，客户完成APP预约提交，物流系统还未审核，可在物流系统直接审核拒绝。"
+    },
+    {
+        "style": "Normal",
+        "text": "第二，客户完成APP预约提交，物流系统已审核，尚未进行二维码验证，可在物流系 统或直批APP中进行计划终止"
+    },
+    {
+        "style": "Normal",
+        "text": "第三，客户完成APP预约提交，物流系统已审核，已完成二维码验证，可在物流系统"
+    },
+    {
+        "style": "table",
+        "text": "|   | 中进行计划撤销下发 |"
+    },
+    {
+        "style": "Normal",
+        "text": "如果客户的实际出库数量少于预约数量，需联系物流岗位人员在物流系统进行退还 余量操作，将剩余量退还到付油通知单上，让客户再次预约，注意：退还余量只能 操作一次，所以必须要按照物流老师的指导的流程规范操作。"
+    },
+    {
+        "style": "table",
+        "text": "| 9 |"
+    },
+    {
+        "style": "Normal",
+        "text": "如果客户预约配送订单时选择不到配送地址有两种场景和两种处理方式：\n1.物流系统维护信息是否正确，包括客户MDM编码和油库编码是否和电销一致， 如果不一致需调整成一致后，再重新在物流系统维护。"
+    },
+    {
+        "style": "Normal",
+        "text": "2.是否调整了物流系统的配送地址信息，如果有过调整，需将中台控制管理-其他 中的配置“预约是否可变更地址”选择成随意变更。"
+    },
+    {
+        "style": "Normal",
+        "text": "78"
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "table",
+        "text": "|  | 客户端APP订单查询 |"
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "Normal",
+        "text": "客户端成品油专底部菜单【订单】可查询所有购油订单，并查看订单相关状态及详情信息"
+    },
+    {
+        "style": "table",
+        "text": "| 订单状态说明如下：  |"
+    },
+    {
+        "style": "Normal",
+        "text": "86"
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "table",
+        "text": "|  | 客户端APP订单查询 |"
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "Normal",
+        "text": "客户端成品油专订单页可通过不同分类切换，筛查不同订单状态的数据"
+    },
+    {
+        "style": "Normal",
+        "text": "全部订单                        待处理                        待提油                            已完成"
+    },
+    {
+        "style": "Normal",
+        "text": "87"
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "table",
+        "text": "|  | 客户端APP物流查询 |"
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "Normal",
+        "text": "用户提交预约提油申请后，可通过成品油专首页【物流查询】页面查询提油进度状态。"
+    },
+    {
+        "style": "table",
+        "text": "| 提油单状态说明如下：  |"
+    },
+    {
+        "style": "Normal",
+        "text": "92"
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "table",
+        "text": "|  | 客户端APP物流查询 |"
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "Normal",
+        "text": "用户点击提油单， 可进入提油单详情页， 查看物流详情及进度信息"
+    },
+    {
+        "style": "table",
+        "text": "| 提油单详情说明如下 •  预约申请信息:即通过审核并确定的物流 计划信息，如配送计划送达时间、配送 车辆的信息；如自提车辆、司机、自提 日期等 •  出库单信息：提油出库的物流信息，如 \t出库单号等 •  提油单进度：物流的审核、出库等记录 |"
+    },
+    {
+        "style": "Normal",
+        "text": "93"
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "table",
+        "text": "|  | 中台物流列表 |"
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "Normal",
+        "text": "【物流管理-物流列表】和APP预约提油信息同步，分自提和配送展示，默认展示近一个月的数据， 业务人员可按照筛选条件查询客户提油申请单的状态与物流详情信息。"
+    },
+    {
+        "style": "Normal",
+        "text": "APP预约申请                              物流列表"
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "Normal",
+        "text": "94"
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "table",
+        "text": "|  | 物流查询详情 |"
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "Normal",
+        "text": "针对具体的提油单点击【查看详情】 ，可查看客户该提油单的预约信息、物流状态、物流计划及 出库信息，以及所属订单及付油通知单的信息。"
+    },
+    {
+        "style": "table",
+        "text": "| 所属订单信息 付油通知单信息    |"
+    },
+    {
+        "style": "Normal",
+        "text": "95"
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "table",
+        "text": "|  |"
+    },
+    {
+        "style": "Normal",
+        "text": "96"
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "table",
+        "text": "|  | 中台订单评价 |"
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "Normal",
+        "text": "► 【订单管理>订单评价】可查看客户下单完成及提油完成在APP反馈的服务评价，默认展 \t示近一个月的数据。"
+    },
+    {
+        "style": "table",
+        "text": "| 购油下单后 \n针对下单环节评价 | 订单提油完成后 中台订单评价查询针对物流环节评价 |"
+    },
+    {
+        "style": "Normal",
+        "text": "97"
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "table",
+        "text": "|  |"
+    },
+    {
+        "style": "Normal",
+        "text": "98"
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "table",
+        "text": "|  | app查询历史挂牌价 |"
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "Normal",
+        "text": "► 【app成品油专我要购油>历史价格查询】可查看90天内各上架商品的某一时刻的历史挂牌价"
+    },
+    {
+        "style": "Normal",
+        "text": "102"
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "table",
+        "text": "|  | 章节要点巩固 |"
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "Normal",
+        "text": "1板块人员可看全国范围数据、省公司人员可看全省范围数据，地市公司人员可看本 \t公司数据，客户经理仅可查看本人所服务客户数据。"
+    },
+    {
+        "style": "Normal",
+        "text": "2如客户经理可查看其本人所服务客户之外的数据，可检查其中台账号是否有正确关 \t联CRM客户经理"
+    },
+    {
+        "style": "Normal",
+        "text": "3若看不到列表页面，说明登陆账号没有权限，联系省公司开通权限即可"
+    },
+    {
+        "style": "Normal",
+        "text": "4列表默认展示近30天的数据，查询更久的数据，需要先选择时间范围再查询"
+    },
+    {
+        "style": "Normal",
+        "text": "103"
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "table",
+        "text": "|  | 客存对账-客存签认 |"
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "Normal",
+        "text": "客户联系人在云梦泽APP成品油专区-我的-客存签认中可查看到当月的消费明细账单，包括购 油明细和提油  明细，统计当月有购进、当月有出库的对账单，让客户联系人进行签认，签认 时必须要保证签 字板上有签字内容，如果不签字， 无法提交。"
+    },
+    {
+        "style": "Normal",
+        "text": "111"
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "table",
+        "text": "|  | APP预约提油流程（未超期） |"
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "Normal",
+        "text": "►     APP预约提油流程， 若预约提油日期包含在“免费仓储日期”之内， 将预约申请发送到物流 \t2.0系统进行审核。"
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "Normal",
+        "text": "114"
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "table",
+        "text": "|  | APP预约提油流程（超期客存） |"
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "Normal",
+        "text": "►     客户在提交预约申请时，按照提油日期进行判断，超出“免费仓储日期”，则按照ERP维护的收 费标准进行计算仓储费，生成“待缴费”的预约申请， 由销售公司业务或财务在电销中台进行审 核；"
+    },
+    {
+        "style": "Normal",
+        "text": "115"
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "table",
+        "text": "|  | 成品油专区添加副联系人 |"
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "Normal",
+        "text": "►     主联系人身份可添加和管理副联系人，添加副联系人时需填写真实的身份信息和验证手机号， \t添加后可查看、编辑副联系人信息，也可删除副联系人。"
+    },
+    {
+        "style": "Normal",
+        "text": "131"
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "table",
+        "text": "|  | 成品油专区主联系人拆分付油通知单 |"
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "Normal",
+        "text": "►     主联系人可将付油通知单的量分配给指定的副联系人，分配数量需小于剩余可提油量，分配时 \t主联系人需同意风险告知并进行短信验证。"
+    },
+    {
+        "style": "Normal",
+        "text": "132"
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "table",
+        "text": "|  | 成品油专区主联系人拆单查询和还量 |"
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "Normal",
+        "text": "►     主联系人可查看拆分付油通知单的详情和副联系人的提油历史记录"
+    },
+    {
+        "style": "Normal",
+        "text": "►     可对已分配给副联系人且其未预约提油的量，进行还量操作"
+    },
+    {
+        "style": "Normal",
+        "text": "133"
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "table",
+        "text": "|  | 成品油专区副联系人提油与还量 |"
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "Normal",
+        "text": "►     副联系人身份具有‘副’字标识，被主联系人分配油量后，可预约提油，预约后也可物流查询 \t和查看提油二维码。"
+    },
+    {
+        "style": "Normal",
+        "text": "►     拆分付油通知单如有剩余提油量， 副联系人也可主动还量，将油量归还到主联系人的付油通知 \t单上。"
+    },
+    {
+        "style": "Normal",
+        "text": "134"
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "table",
+        "text": "|  | 水路预约自提和配送 |"
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "Normal",
+        "text": "水路自提：输入运输船名和选择船运提货人，与公路自提的流程一致，支持二维码自助提油；"
+    },
+    {
+        "style": "Normal",
+        "text": "水路配送：与公路配送的页面与流程一致"
+    },
+    {
+        "style": "table",
+        "text": "|   |  app水路配送预约 |\n| app水路自提预约                  选择船运提货人 |  app水路配送预约 |"
+    },
+    {
+        "style": "Normal",
+        "text": "138"
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "table",
+        "text": "|  | 维护船运提货人 |"
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "Normal",
+        "text": "预约水路自提，需提前维护船运提货人"
+    },
+    {
+        "style": "Normal",
+        "text": "类似司机信息，包括提货人姓名、身份证号和手机号"
+    },
+    {
+        "style": "Normal",
+        "text": "app船运提货人维护入口             app我的船运提货人            app添加船运提货人"
+    },
+    {
+        "style": "Normal",
+        "text": "139"
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "table",
+        "text": "|  | 查询水路提油时展示船舶信息 |"
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "Normal",
+        "text": "APP和中台都支持水路单查询"
+    },
+    {
+        "style": "Normal",
+        "text": "水路单展示船舶信息"
+    },
+    {
+        "style": "table",
+        "text": "|  |"
+    },
+    {
+        "style": "Normal",
+        "text": "中台查询物流信息app查询物流信息"
+    },
+    {
+        "style": "Normal",
+        "text": "140"
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "table",
+        "text": "|  | 运维功能补录水路的出库单 |"
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "Normal",
+        "text": "当要补录水路出库单据时，需填写自提船名或配送船名"
+    },
+    {
+        "style": "table",
+        "text": "|  |"
+    },
+    {
+        "style": "Normal",
+        "text": "中台补录水路出库单"
+    },
+    {
+        "style": "Normal",
+        "text": "141"
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "table",
+        "text": "|  |"
+    },
+    {
+        "style": "Normal",
+        "text": "142"
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "table",
+        "text": "|  | 议价下单 |"
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "Normal",
+        "text": "中台议价申请逐级审批通过后，在云梦泽APP成品油专区“我要购油-议价下单”中提交订单， 即 可享受协议价格， 其中购买数量要求“等于”议价数量。"
+    },
+    {
+        "style": "Normal",
+        "text": "157"
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "table",
+        "text": "|  | 合同价下单 |"
+    },
+    {
+        "style": "Normal",
+        "text": ""
+    },
+    {
+        "style": "Normal",
+        "text": "合同价生效后，从云梦泽APP成品油专区-我要购油入口进入，选择对应的油品，进入填写订单页"
+    },
+    {
+        "style": "Normal",
+        "text": "面， 可以看见最 终单价为合同价格，输入购买数量、提油方式等信息后， 点击“提交” ，生成"
+    },
+    {
+        "style": "Normal",
+        "text": "订单。"
+    },
+    {
+        "style": "Normal",
+        "text": "163"
+    }
+]

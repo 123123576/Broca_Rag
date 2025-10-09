@@ -1,0 +1,4 @@
+## 输入文档内容
+```
+{{document_first_1000_character}}
+```

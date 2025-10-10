@@ -207,7 +207,7 @@ def main():
         other_number = 0
         error_files = []
 
-        with open('../result_csv/output_test_32B_v7.csv', 'w', newline='', encoding='utf-8') as csvfile:
+        with open('../result_csv/output_test_32B_v8.csv', 'w', newline='', encoding='utf-8') as csvfile:
             fieldnames = ['name', 'chunk_index', 'text', 'score', 'result']
             writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
             writer.writeheader()
@@ -269,8 +269,9 @@ def main():
                     evaluate_message = evaluate_template.replace("{{data}}", text)
                     result = call_llm(evaluate_system_prompt, evaluate_message, "Qwen3-235B-A22B-Instruct-2507")
                     import re
-                    json_pattern = r'\{[^{}]*\{[^{}]*\}[^{}]*\}|\{.*\}'
-                    match = re.search(json_pattern, result, re.DOTALL)
+                    result_end = result.rfind("}")
+                    result_start = result.find("{")
+                    match = result[result_start:result_end+1]
 
                     print("评估结果:", result)
                     json_result = json.loads(match)

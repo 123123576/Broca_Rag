@@ -207,7 +207,7 @@ def main():
         other_number = 0
         error_files = []
 
-        with open('../result_csv/output_test_32B_v8.csv', 'w', newline='', encoding='utf-8') as csvfile:
+        with open('../result_csv/output_test_32B_v7_3.csv', 'w', newline='', encoding='utf-8') as csvfile:
             fieldnames = ['name', 'chunk_index', 'text', 'score', 'result']
             writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
             writer.writeheader()

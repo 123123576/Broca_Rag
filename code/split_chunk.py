@@ -72,10 +72,11 @@ def make_text(chunk_result, data, total_data_len):
         chunk_result = chunk_result.strip()
         if chunk_result.startswith('[') and len(chunk_result) > 2:
             # 修复不完整的JSON
+            chunk_start = chunk_result.find('[[')
             if not chunk_result.endswith(']]'):
                 chunk_end = chunk_result.rfind(']')
                 if chunk_end > 0:
-                    chunk_result = chunk_result[:chunk_end + 1]
+                    chunk_result = chunk_result[chunk_start:chunk_end + 1]
                     chunk_result += ']'
             # 解析JSON
             list_data = json.loads(chunk_result)
@@ -113,7 +114,7 @@ def safe_call_llm(system_prompt, user_message, max_retries=3):
     """
     for attempt in range(max_retries):
         try:
-            result = call_llm(system_prompt, user_message, "Qwen3-32B")
+            result = call_llm(system_prompt, user_message, "Bowen_General_v2.2_14B_20241001")
             if 'Error code:' not in result:
                 return result
             print(f"LLM调用失败，第{attempt + 1}次重试...")
@@ -207,7 +208,7 @@ def main():
         other_number = 0
         error_files = []
 
-        with open('../result_csv/output_test_32B_v7_3.csv', 'w', newline='', encoding='utf-8') as csvfile:
+        with open('../result_csv/output_test_bowen1001_14B_v1.csv', 'w', newline='', encoding='utf-8') as csvfile:
             fieldnames = ['name', 'chunk_index', 'text', 'score', 'result']
             writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
             writer.writeheader()

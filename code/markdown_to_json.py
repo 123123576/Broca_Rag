@@ -1,4 +1,8 @@
 import json
+from classification_main import call_llm, get_all_json_files
+from template import other_user_prompt, other_system_prompt
+from jinja2 import Template
+from split_chunk import make_text
 
 
 def markdown_to_json_lines(markdown_content):
@@ -38,15 +42,66 @@ def view_markdown(file_path):
         print(f"读取文件时出错: {e}")
         return ''
 
+
 # 使用示例
-markdown_content = view_markdown('../data/markdown_data/guangxijianzhu.md')
+# markdown_content = view_markdown('../data/markdown_data/guangxijianzhu.md')
 
-# 转换并保存为JSON
-json_result = markdown_to_json_lines(markdown_content)
+with open("../prompt/make_markdown_prompt/system.txt", "r", encoding="utf-8") as f:
+    system_prompt = f.read()
 
-# 打印结果
-print(json.dumps(json_result, ensure_ascii=False, indent=2))
+with open("../prompt/make_markdown_prompt/user.txt", "r", encoding="utf-8") as f:
+    user_prompt = f.read()
 
-# 保存到文件
-with open('output.json', 'w', encoding='utf-8') as f:
-    json.dump(json_result, f, ensure_ascii=False, indent=2)
+base_dir = "D:/zhuiyi/rag_chunk/20250908_LLM分段/20250908_LLM分段"
+
+# 1. 获取所有JSON文件
+print("正在查找JSON文件...")
+json_files = get_all_json_files(base_dir)[-3:]
+
+import csv
+
+with open('../result_csv/markdown_output.csv', 'w', encoding='utf-8') as f:
+    fieldnames = ['name', 'chunk_index', 'text', 'score', 'result']
+    writer = csv.DictWriter(f, fieldnames=fieldnames)
+    writer.writeheader()
+    for i, json_file in enumerate(json_files, 1):
+        name_start = json_file.rfind("\\")
+        name = json_file[name_start+1:]
+
+        print(name, "正在markdown风格化")
+        if name == "渣打银行（中国）有限公司信用卡章程-12513.docx.json_processed.json":
+            pass
+        else:
+            continue
+        with open(json_file, 'r', encoding='utf-8') as f:
+            data = json.load(f)[:175]
+            chunk_result, text = make_text(str([[1, len(data)]]), data, len(data))
+
+        user_template = Template(other_user_prompt)
+        with open("../prompt/make_markdown_prompt/user.txt", "r", encoding="utf-8") as f:
+            user_prompt = f.read()
+        user_prompt = user_prompt.replace('{{txt_text}}', text)
+
+        result = call_llm(system_prompt, user_prompt, model="Qwen3-32B")
+
+        markdown_result_start = result.find('```markdown')
+        markdown_result_end = result.rfind('```')
+        markdown_result = result[markdown_result_start + 12:markdown_result_end]
+
+        # 转换并保存为JSON
+        json_result = markdown_to_json_lines(markdown_result)
+
+        # 保存到文件
+        with open('../data/markdown_data/'+name, 'w', encoding='utf-8') as json_data:
+            json.dump(json_result, json_data, ensure_ascii=False, indent=2)
+
+        user_content = user_template.render(name_json=name, content_json=json_result)
+
+        print("正在分块")
+        chunk = call_llm(other_system_prompt, user_content, model="Qwen3-32B")
+        print(chunk)
+
+        chunk_result, text = make_text(chunk, json_result, total_data_len=len(chunk_result))
+
+        file_record = {'name': name, 'chunk_index': str(chunk_result), 'text': text}
+        writer.writerow(file_record)

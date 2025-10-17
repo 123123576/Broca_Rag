@@ -68,6 +68,9 @@ other_system_prompt = """
 ```
 **输出：** `[[25，35]]`
 
+## 参考输出(二维数组以一行输出)
+[[start_index,end_index],[start_index,end_index]]
+
 ## 输出格式
 只输出index区间的二维数组，格式：[[起始index, 结束index], [起始index, 结束index], ...]
 - 索引使用数字格式（将字符串索引转换为数字）

@@ -56,7 +56,7 @@ base_dir = "D:/zhuiyi/rag_chunk/20250908_LLM分段/20250908_LLM分段"
 
 # 1. 获取所有JSON文件
 print("正在查找JSON文件...")
-json_files = get_all_json_files(base_dir)[-3:]
+json_files = get_all_json_files(base_dir)
 
 import csv
 
@@ -67,12 +67,12 @@ with open('../result_csv/markdown_output.csv', 'w', encoding='utf-8') as f:
     for i, json_file in enumerate(json_files, 1):
         name_start = json_file.rfind("\\")
         name = json_file[name_start+1:]
-
-        print(name, "正在markdown风格化")
-        if name == "渣打银行（中国）有限公司信用卡章程-12513.docx.json_processed.json":
-            pass
-        else:
+        if name != '中国人寿保险说明书-5336.pdf.json_processed.json':
             continue
+        else:
+            pass
+        print(name, "正在markdown风格化")
+
         with open(json_file, 'r', encoding='utf-8') as f:
             data = json.load(f)[:175]
             chunk_result, text = make_text(str([[1, len(data)]]), data, len(data))

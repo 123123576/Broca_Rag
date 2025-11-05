@@ -28,7 +28,7 @@ def load_QA_prompt_templates(prompt_dir: str) -> Tuple[str, str]:
     """
     读取system.txt和user.txt文件
     """
-    system_file = os.path.join(prompt_dir, "QA_segmentation_system_v1.txt")
+    system_file = os.path.join(prompt_dir, "QA_segmentation_system_v5.txt")
     user_file = os.path.join(prompt_dir, "QA_segmentation_user_v4.txt")
 
     with open(system_file, 'r', encoding='utf-8') as f:
@@ -108,13 +108,13 @@ def make_text(chunk_result, data, total_data_len):
     return list_data, text
 
 
-def safe_call_llm(system_prompt, user_message, max_retries=3):
+def safe_call_llm(system_prompt, user_message, model, max_retries=3):
     """
     安全的LLM调用函数，包含重试机制
     """
     for attempt in range(max_retries):
         try:
-            result = call_llm(system_prompt, user_message, "Bowen_General_v2.2_14B_20241001")
+            result = call_llm(system_prompt, user_message, model)
             if 'Error code:' not in result:
                 return result
             print(f"LLM调用失败，第{attempt + 1}次重试...")
@@ -149,7 +149,7 @@ def process_large_data(other_system_prompt, other_user_template, file_name, data
             print('*'*60)
             print(user_content)
             # 安全调用LLM
-            some_chunk_result = safe_call_llm(other_system_prompt, user_content)
+            some_chunk_result = safe_call_llm(other_system_prompt, user_content, "Qwen3-32B")
             print(some_chunk_result)
             # 处理返回结果
             if 'Error code: 400' in some_chunk_result or 'Error:' in some_chunk_result:
@@ -208,13 +208,13 @@ def main():
         other_number = 0
         error_files = []
 
-        with open('../result_csv/output_test_bowen1001_14B_v1.csv', 'w', newline='', encoding='utf-8') as csvfile:
+        with open('../result_csv/output_test_32B_v8_5.csv', 'w', newline='', encoding='utf-8') as csvfile:
             fieldnames = ['name', 'chunk_index', 'text', 'score', 'result']
             writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
             writer.writeheader()
 
             # 3. 对每个JSON文件分别处理
-            for i, json_file in enumerate(json_files, 1):
+            for i, json_file in enumerate(json_files[3:], 1):
                 try:
                     print(f"\n{'=' * 60}")
                     print(f"正在处理第 {i} 个文件: {os.path.basename(json_file)}")
@@ -233,7 +233,7 @@ def main():
 
                     # 安全调用大模型
                     print("正在调用大模型进行分类...")
-                    classification_result = safe_call_llm(system_prompt, user_message)
+                    classification_result = safe_call_llm(system_prompt, user_message, "Qwen3-32B")
 
                     print("-" * 40)
                     print(f"分类结果: {classification_result}")
@@ -254,8 +254,8 @@ def main():
                         print("使用QA分段策略...")
                         # 替换用户模板中的占位符
                         QA_user_message = QA_user_template.replace("{{replace_json}}", str(data))
-                        chunk_result = safe_call_llm(QA_system_prompt, QA_user_message)
-
+                        chunk_result = safe_call_llm(QA_system_prompt, QA_user_message, "Bowen_General_v3.0_14B_20250718")
+                        print(QA_user_message)
                         QA_number += 1
                         if 'Error code: 400' in chunk_result or 'Error:' in chunk_result:
                             print("QA分段出错，使用空结果")
@@ -265,21 +265,23 @@ def main():
 
                     print(f"分块结果: {chunk_result}")
 
+                    score = '?'
+                    score_result = '?'
                     # 模型评估
-                    print("正在评估模型分块结果")
-                    evaluate_message = evaluate_template.replace("{{data}}", text)
-                    result = call_llm(evaluate_system_prompt, evaluate_message, "Qwen3-235B-A22B-Instruct-2507")
-                    import re
-                    result_end = result.rfind("}")
-                    result_start = result.find("{")
-                    match = result[result_start:result_end+1]
-
-                    print("评估结果:", result)
-                    json_result = json.loads(match)
-                    score = json_result['overall_assessment']['average_score']
-                    score_result = json_result['overall_assessment']['summary']
+                    # print("正在评估模型分块结果")
+                    # evaluate_message = evaluate_template.replace("{{data}}", text)
+                    # result = call_llm(evaluate_system_prompt, evaluate_message, "Qwen3-235B-A22B-Instruct-2507")
+                    # import re
+                    # result_end = result.rfind("}")
+                    # result_start = result.find("{")
+                    # match = result[result_start:result_end+1]
+                    #
+                    # print("评估结果:", result)
+                    # json_result = json.loads(match)
+                    # score = json_result['overall_assessment']['average_score']
+                    # score_result = json_result['overall_assessment']['summary']
                     # 写入CSV
-                    file_record = {'name': file_name, 'chunk_index': str(chunk_result), 'text': text, 'score': str(score), 'result': str(score_result)}
+                    file_record = {'name': file_name, 'chunk_index': str(chunk_result), 'text': text, 'score': score, 'result': score_result}
                     writer.writerow(file_record)
                     print(f"文件 {file_name} 处理完成")
 

@@ -1,9 +1,8 @@
-import json
 import os
 from pathlib import Path
-import openai
 from typing import List, Tuple
-import csv
+
+import openai
 
 
 def read_single_json_file_and_concatenate_texts(file_path: str, max_chars: int = 1000) -> str:
@@ -47,12 +46,13 @@ def get_all_json_files(base_dir: str) -> List[str]:
         # os.path.join(base_dir, "data", "OCR效果性能测试_raw_process"),
         # os.path.join(base_dir, "data", "产研-文档问答效果评测_raw_process"),
         os.path.join(base_dir, "data", "测试数据")
+        # os.path.join(base_dir, "data", "badcase_json")
     ]
 
     for json_dir in json_dirs:
         if os.path.exists(json_dir):
             for file_path in Path(json_dir).glob("*.json"):
-                if str(file_path)[-19:] == 'json_processed.json':
+                if str(file_path)[-5:] == '.json':
                     json_files.append(str(file_path))
 
     return sorted(json_files)
@@ -74,10 +74,8 @@ def load_prompt_templates(prompt_dir: str) -> Tuple[str, str]:
     return system_prompt, user_template
 
 
-import requests
 import json
 import logging
-from jinja2 import Template
 
 # 配置日志
 logging.basicConfig(level=logging.INFO)
@@ -88,7 +86,10 @@ def call_llm(system_prompt: str, user_message: str, model: str) -> str:
     api_key = "zhuiyi"
     base_url = "http://172.18.160.39:8168/v1"
     client = openai.OpenAI(api_key=api_key, base_url=base_url)
-
+    if model == "Qwen3-32B":
+        temerature = 0.1
+    else:
+        temerature = 0.01
     try:
         response = client.chat.completions.create(
             model=model,
@@ -96,16 +97,27 @@ def call_llm(system_prompt: str, user_message: str, model: str) -> str:
                 {"role": "system", "content": system_prompt},
                 {"role": "user", "content": user_message}
             ],
-            temperature=0.7,
+            temperature=temerature,
             max_tokens=5000,
             top_p=0.8,
             presence_penalty=0,
             frequency_penalty=0,
             seed=1995,
-            extra_body={"enable_thinking": False}
+            extra_body={"enable_thinking": False},
+            # 流式输出参数
+            stream=True,
+            # json结构化参数
+            # response_format={"type": "json_object"}
         )
+        content_parts = []
+        for chunk in response:
+            if chunk.choices:
+                content = chunk.choices[0].delta.content or ""
+                print(content, end="", flush=True)
+                content_parts.append(content)
 
-        return response.choices[0].message.content
+        full_response = "".join(content_parts)
+        return full_response
 
     except Exception as e:
         print(f"调用大模型时出错: {e}")
